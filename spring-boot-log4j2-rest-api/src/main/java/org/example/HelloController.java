@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping( value = "/whoami/{username}" )
     public String whoami(@PathVariable("username") String username) {
-        return String.format("Hello! You're %s and you'll become a(n) %s...\n", username);
+        return String.format("Hello! You're %s", username);
     }
 
 }
